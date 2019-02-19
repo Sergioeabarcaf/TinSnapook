@@ -8,11 +8,15 @@
 
 import UIKit
 
-class MainCameraViewController: UIViewController {
+class MainCameraViewController: CameraViewController {
 
+    @IBOutlet weak var previewView: PreviewView!
+    
     override func viewDidLoad() {
+        super._previewView = self.previewView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 

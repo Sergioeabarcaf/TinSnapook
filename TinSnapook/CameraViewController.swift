@@ -16,16 +16,16 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         super.viewDidLoad()
         
         // Disable UI. Enable the UI later, if and only if the session starts running.
-        cameraButton.isEnabled = false
-        recordButton.isEnabled = false
-        photoButton.isEnabled = false
-        livePhotoModeButton.isEnabled = false
-        depthDataDeliveryButton.isEnabled = false
-        portraitEffectsMatteDeliveryButton.isEnabled = false
-        captureModeControl.isEnabled = false
+        if cameraButton != nil { cameraButton.isEnabled = false }
+        if recordButton != nil { recordButton.isEnabled = false }
+        if photoButton != nil { photoButton.isEnabled = false}
+        if livePhotoModeButton != nil { livePhotoModeButton.isEnabled = false }
+        if depthDataDeliveryButton != nil { depthDataDeliveryButton.isEnabled = false }
+        if portraitEffectsMatteDeliveryButton != nil { portraitEffectsMatteDeliveryButton.isEnabled = false }
+        if captureModeControl != nil { captureModeControl.isEnabled = false }
         
         // Set up the video preview view.
-        previewView.session = session
+        _previewView.session = session
         /*
          Check video authorization status. Video access is required and audio
          access is optional. If the user denies audio access, AVCam won't
@@ -148,7 +148,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         
-        if let videoPreviewLayerConnection = previewView.videoPreviewLayer.connection {
+        if let videoPreviewLayerConnection = _previewView.videoPreviewLayer.connection {
             let deviceOrientation = UIDevice.current.orientation
             guard let newVideoOrientation = AVCaptureVideoOrientation(deviceOrientation: deviceOrientation),
                 deviceOrientation.isPortrait || deviceOrientation.isLandscape else {
@@ -175,7 +175,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     
     @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
     
-    @IBOutlet private weak var previewView: PreviewView!
+    weak var _previewView: PreviewView!
     
     // Call this on the session queue.
     /// - Tag: ConfigureSession
@@ -237,7 +237,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
                         }
                     }
                     
-                    self.previewView.videoPreviewLayer.connection?.videoOrientation = initialVideoOrientation
+                    self._previewView.videoPreviewLayer.connection?.videoOrientation = initialVideoOrientation
                 }
             } else {
                 print("Couldn't add video device input to the session.")
@@ -499,7 +499,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     }
     
     @IBAction private func focusAndExposeTap(_ gestureRecognizer: UITapGestureRecognizer) {
-        let devicePoint = previewView.videoPreviewLayer.captureDevicePointConverted(fromLayerPoint: gestureRecognizer.location(in: gestureRecognizer.view))
+        let devicePoint = _previewView.videoPreviewLayer.captureDevicePointConverted(fromLayerPoint: gestureRecognizer.location(in: gestureRecognizer.view))
         focus(with: .autoFocus, exposureMode: .autoExpose, at: devicePoint, monitorSubjectAreaChange: true)
     }
     
@@ -550,7 +550,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
          entering the session queue. We do this to ensure UI elements are accessed on
          the main thread and session configuration is done on the session queue.
          */
-        let videoPreviewLayerOrientation = previewView.videoPreviewLayer.connection?.videoOrientation
+        let videoPreviewLayerOrientation = _previewView.videoPreviewLayer.connection?.videoOrientation
         
         sessionQueue.async {
             if let photoOutputConnection = self.photoOutput.connection(with: .video) {
@@ -586,9 +586,9 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
             let photoCaptureProcessor = PhotoCaptureProcessor(with: photoSettings, willCapturePhotoAnimation: {
                 // Flash the screen to signal that AVCam took a photo.
                 DispatchQueue.main.async {
-                    self.previewView.videoPreviewLayer.opacity = 0
+                    self._previewView.videoPreviewLayer.opacity = 0
                     UIView.animate(withDuration: 0.25) {
-                        self.previewView.videoPreviewLayer.opacity = 1
+                        self._previewView.videoPreviewLayer.opacity = 1
                     }
                 }
             }, livePhotoCaptureHandler: { capturing in
@@ -733,7 +733,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         recordButton.isEnabled = false
         captureModeControl.isEnabled = false
         
-        let videoPreviewLayerOrientation = previewView.videoPreviewLayer.connection?.videoOrientation
+        let videoPreviewLayerOrientation = _previewView.videoPreviewLayer.connection?.videoOrientation
         
         sessionQueue.async {
             if !movieFileOutput.isRecording {
