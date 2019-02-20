@@ -288,7 +288,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         session.commitConfiguration()
     }
     
-    @IBAction private func resumeInterruptedSession(_ resumeButton: UIButton) {
+    @IBAction func resumeInterruptedSession(_ resumeButton: UIButton) {
         sessionQueue.async {
             /*
              The session might fail to start running, e.g., if a phone or FaceTime call is still
@@ -323,7 +323,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     @IBOutlet weak var _captureModeControl: UISegmentedControl!
     
     /// - Tag: EnableDisableModes
-    @IBAction private func toggleCaptureMode(_ captureModeControl: UISegmentedControl) {
+    @IBAction func toggleCaptureMode(_ captureModeControl: UISegmentedControl) {
         captureModeControl.isEnabled = false
         
         if captureModeControl.selectedSegmentIndex == CaptureMode.photo.rawValue {
@@ -411,7 +411,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
                                                                                mediaType: .video, position: .unspecified)
     
     /// - Tag: ChangeCamera
-    @IBAction private func changeCamera(_ cameraButton: UIButton) {
+    @IBAction func changeCamera(_ cameraButton: UIButton) {
         cameraButton.isEnabled = false
         _recordButton.isEnabled = false
         _photoButton.isEnabled = false
@@ -544,7 +544,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     @IBOutlet weak var _photoButton: UIButton!
     
     /// - Tag: CapturePhoto
-    @IBAction private func capturePhoto(_ photoButton: UIButton) {
+    @IBAction func capturePhoto(_ photoButton: UIButton) {
         /*
          Retrieve the video preview layer's video orientation on the main queue before
          entering the session queue. We do this to ensure UI elements are accessed on
@@ -643,7 +643,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     
     @IBOutlet weak var _livePhotoModeButton: UIButton!
     
-    @IBAction private func toggleLivePhotoMode(_ livePhotoModeButton: UIButton) {
+    @IBAction func toggleLivePhotoMode(_ livePhotoModeButton: UIButton) {
         sessionQueue.async {
             self.livePhotoMode = (self.livePhotoMode == .on) ? .off : .on
             let livePhotoMode = self.livePhotoMode
@@ -718,7 +718,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     
     @IBOutlet weak var _resumeButton: UIButton!
     
-    @IBAction private func toggleMovieRecording(_ recordButton: UIButton) {
+    @IBAction func toggleMovieRecording(_ recordButton: UIButton) {
         guard let movieFileOutput = self.movieFileOutput else {
             return
         }
