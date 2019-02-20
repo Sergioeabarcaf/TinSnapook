@@ -45,7 +45,7 @@
 	<string>Nos permite utilizar su camara?</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Nos permite utilizar su microfono?</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>Nos permite acceder a sus fotos y videos?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Nos permite acceder a sus fotos ?</string>
 </dict>
 </plist>
