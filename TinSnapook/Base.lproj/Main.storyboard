@@ -20,74 +20,108 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAH-QR-Q9W" customClass="PreviewView" customModule="TinSnapook" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="33L-NJ-3UD">
-                                        <rect key="frame" x="112" y="510" width="121" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="First"/>
-                                            <segment title="Second"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbB-ru-XUb">
-                                        <rect key="frame" x="166" y="55" width="31" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera no disponible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyQ-ec-xTr">
-                                        <rect key="frame" x="104" y="286" width="167" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDG-e1-kUh">
-                                        <rect key="frame" x="139" y="248" width="67" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Continuar"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGs-3S-cJb">
-                                        <rect key="frame" x="30" y="569" width="47" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Grabar"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIb-K3-dIZ">
-                                        <rect key="frame" x="147" y="569" width="31" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Foto"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-ki-TQh">
-                                        <rect key="frame" x="270" y="569" width="89" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Girar camara"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noa-ON-1ul">
-                                        <rect key="frame" x="39" y="17" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Live"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVp-Yl-U3q">
-                                        <rect key="frame" x="289" y="17" width="52" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Portrait"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-hc-pPx">
-                                        <rect key="frame" x="166" y="17" width="42" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Depth"/>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="33L-NJ-3UD">
+                                <rect key="frame" x="144" y="489" width="87" height="29"/>
+                                <segments>
+                                    <segment title="" image="camera_icon"/>
+                                    <segment title="" image="video"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbB-ru-XUb">
+                                <rect key="frame" x="172" y="110" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera no disponible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyQ-ec-xTr">
+                                <rect key="frame" x="104" y="323" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDG-e1-kUh">
+                                <rect key="frame" x="154" y="439" width="67" height="30"/>
+                                <state key="normal" title="Continuar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGs-3S-cJb">
+                                <rect key="frame" x="20" y="567" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7eO-nJ-tch"/>
+                                    <constraint firstAttribute="width" constant="50" id="jeg-dg-WeY"/>
+                                </constraints>
+                                <state key="normal" image="CaptureVideo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIb-K3-dIZ">
+                                <rect key="frame" x="162.5" y="567" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Irz-y4-2ZS"/>
+                                    <constraint firstAttribute="height" constant="50" id="inC-C5-hEq"/>
+                                </constraints>
+                                <state key="normal" image="CapturePhoto">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.40000000000000002" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-ki-TQh">
+                                <rect key="frame" x="305" y="567" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6O7-15-TMA"/>
+                                    <constraint firstAttribute="width" constant="50" id="AaL-ei-jUA"/>
+                                </constraints>
+                                <state key="normal" image="FlipCamera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noa-ON-1ul">
+                                <rect key="frame" x="20" y="70" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="32W-Xb-REG"/>
+                                    <constraint firstAttribute="width" constant="30" id="8eh-yO-Q4g"/>
+                                </constraints>
+                                <state key="normal" image="LivePhotoON"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVp-Yl-U3q">
+                                <rect key="frame" x="325" y="70" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ckz-nL-fqn"/>
+                                    <constraint firstAttribute="width" constant="30" id="s82-ny-Pah"/>
+                                </constraints>
+                                <state key="normal" image="PortraitMatteON"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-hc-pPx">
+                                <rect key="frame" x="172.5" y="70" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="E8I-PV-nW8"/>
+                                    <constraint firstAttribute="height" constant="30" id="mAQ-fI-Eui"/>
+                                </constraints>
+                                <state key="normal" image="DepthON"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BVp-Yl-U3q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="0ym-H3-TIR"/>
+                            <constraint firstItem="Afb-hc-pPx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="27L-v7-xDc"/>
+                            <constraint firstItem="Noa-ON-1ul" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2so-26-Qnl"/>
+                            <constraint firstItem="33L-NJ-3UD" firstAttribute="top" secondItem="rDG-e1-kUh" secondAttribute="bottom" constant="20" id="3Za-Nq-ku7"/>
+                            <constraint firstItem="rDG-e1-kUh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4bn-cE-2dy"/>
                             <constraint firstItem="DAH-QR-Q9W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4lE-3Z-UqT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="33L-NJ-3UD" secondAttribute="bottom" constant="150" id="50K-OX-0Nn"/>
+                            <constraint firstItem="ZyQ-ec-xTr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6AU-RS-QUf"/>
+                            <constraint firstItem="SGs-3S-cJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="F98-dm-Fzv"/>
+                            <constraint firstItem="GbB-ru-XUb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PTD-3x-Gdw"/>
+                            <constraint firstItem="33L-NJ-3UD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vnv-W4-0wJ"/>
+                            <constraint firstItem="PIb-K3-dIZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XTY-Jp-VLR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mmi-ki-TQh" secondAttribute="bottom" constant="50" id="YCV-8u-3ji"/>
+                            <constraint firstItem="GbB-ru-XUb" firstAttribute="top" secondItem="Afb-hc-pPx" secondAttribute="bottom" constant="10" id="eZL-gQ-p4o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BVp-Yl-U3q" secondAttribute="trailing" constant="20" id="g88-mS-7E1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SGs-3S-cJb" secondAttribute="bottom" constant="50" id="icr-G2-OGf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmi-ki-TQh" secondAttribute="trailing" constant="20" id="ieg-aT-xH2"/>
+                            <constraint firstItem="Noa-ON-1ul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lm2-FQ-zxW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PIb-K3-dIZ" secondAttribute="bottom" constant="50" id="nfn-Cb-PAw"/>
+                            <constraint firstItem="ZyQ-ec-xTr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p3e-nb-uFU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DAH-QR-Q9W" secondAttribute="bottom" id="qbt-Zw-RgS"/>
                             <constraint firstItem="DAH-QR-Q9W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sG5-av-J9W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DAH-QR-Q9W" secondAttribute="trailing" id="tes-VJ-VAh"/>
+                            <constraint firstItem="Afb-hc-pPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xRw-PX-9HV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -110,4 +144,14 @@
             <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CapturePhoto" width="150" height="150"/>
+        <image name="CaptureVideo" width="150" height="150"/>
+        <image name="DepthON" width="150" height="150"/>
+        <image name="FlipCamera" width="150" height="150"/>
+        <image name="LivePhotoON" width="150" height="150"/>
+        <image name="PortraitMatteON" width="150" height="150"/>
+        <image name="camera_icon" width="29" height="24"/>
+        <image name="video" width="23" height="15"/>
+    </resources>
 </document>
