@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06629671221E0ACB004E6A76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06629670221E0ACB004E6A76 /* GoogleService-Info.plist */; };
+		0608657C2235A87000F30827 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0608657B2235A87000F30827 /* LoginViewController.swift */; };
+		0608657E2235B0F600F30827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0608657D2235B0F500F30827 /* GoogleService-Info.plist */; };
 		069318DB221CADF3008C633F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069318DA221CADF3008C633F /* AppDelegate.swift */; };
 		069318DD221CADF3008C633F /* MainCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069318DC221CADF3008C633F /* MainCameraViewController.swift */; };
 		069318E0221CADF3008C633F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069318DE221CADF3008C633F /* Main.storyboard */; };
@@ -20,7 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06629670221E0ACB004E6A76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0608657B2235A87000F30827 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0608657D2235B0F500F30827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		069318D7221CADF3008C633F /* TinSnapook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinSnapook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069318DA221CADF3008C633F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		069318DC221CADF3008C633F /* MainCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCameraViewController.swift; sourceTree = "<group>"; };
@@ -69,13 +71,14 @@
 		069318D9221CADF3008C633F /* TinSnapook */ = {
 			isa = PBXGroup;
 			children = (
-				06629670221E0ACB004E6A76 /* GoogleService-Info.plist */,
+				0608657D2235B0F500F30827 /* GoogleService-Info.plist */,
 				069318DA221CADF3008C633F /* AppDelegate.swift */,
 				069318DC221CADF3008C633F /* MainCameraViewController.swift */,
 				069318ED221CAFFD008C633F /* CameraViewController.swift */,
 				069318EC221CAFFC008C633F /* PhotoCaptureDelegate.swift */,
 				069318EE221CAFFD008C633F /* PreviewView.swift */,
 				069318DE221CADF3008C633F /* Main.storyboard */,
+				0608657B2235A87000F30827 /* LoginViewController.swift */,
 				069318E1221CADF5008C633F /* Assets.xcassets */,
 				069318E3221CADF5008C633F /* LaunchScreen.storyboard */,
 				069318E6221CADF5008C633F /* Info.plist */,
@@ -161,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				069318E5221CADF5008C633F /* LaunchScreen.storyboard in Resources */,
-				06629671221E0ACB004E6A76 /* GoogleService-Info.plist in Resources */,
+				0608657E2235B0F600F30827 /* GoogleService-Info.plist in Resources */,
 				069318E2221CADF5008C633F /* Assets.xcassets in Resources */,
 				069318E0221CADF3008C633F /* Main.storyboard in Resources */,
 			);
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0608657C2235A87000F30827 /* LoginViewController.swift in Sources */,
 				069318F1221CAFFD008C633F /* PreviewView.swift in Sources */,
 				069318EF221CAFFD008C633F /* PhotoCaptureDelegate.swift in Sources */,
 				069318F0221CAFFD008C633F /* CameraViewController.swift in Sources */,

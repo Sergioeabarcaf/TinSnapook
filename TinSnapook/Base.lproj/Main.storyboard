@@ -10,6 +10,64 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="A2w-eS-zyt">
+            <objects>
+                <viewController id="aQL-CF-fYP" customClass="LoginViewController" customModule="TinSnapook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZw-9Z-jPa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frogames" translatesAutoresizingMaskIntoConstraints="NO" id="cRn-XX-qlR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXS-n4-2AO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wsM-iC-JTk">
+                                        <rect key="frame" x="45" y="60" width="285.5" height="55"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frogames_black" translatesAutoresizingMaskIntoConstraints="NO" id="Hv5-e9-J2F">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="JnP-dL-TtD"/>
+                                                    <constraint firstAttribute="height" constant="55" id="wam-DT-5iq"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TinSnapook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wp5-bL-j6c">
+                                                <rect key="frame" x="68" y="0.0" width="217.5" height="55"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="0.7517925941780822" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wsM-iC-JTk" firstAttribute="top" secondItem="lXS-n4-2AO" secondAttribute="top" constant="60" id="9U5-6q-yad"/>
+                                    <constraint firstItem="wsM-iC-JTk" firstAttribute="centerX" secondItem="lXS-n4-2AO" secondAttribute="centerX" id="P6h-Fl-nhP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lXS-n4-2AO" firstAttribute="leading" secondItem="oYA-yY-WGJ" secondAttribute="leading" id="44z-cp-SOG"/>
+                            <constraint firstItem="cRn-XX-qlR" firstAttribute="leading" secondItem="oYA-yY-WGJ" secondAttribute="leading" id="4B8-HW-fHg"/>
+                            <constraint firstItem="cRn-XX-qlR" firstAttribute="top" secondItem="oYA-yY-WGJ" secondAttribute="top" id="Aov-b3-cRl"/>
+                            <constraint firstItem="oYA-yY-WGJ" firstAttribute="bottom" secondItem="lXS-n4-2AO" secondAttribute="bottom" id="J1Z-VG-atO"/>
+                            <constraint firstItem="oYA-yY-WGJ" firstAttribute="bottom" secondItem="cRn-XX-qlR" secondAttribute="bottom" id="Jdu-5Z-WmU"/>
+                            <constraint firstItem="lXS-n4-2AO" firstAttribute="top" secondItem="oYA-yY-WGJ" secondAttribute="top" id="V2W-X9-ogL"/>
+                            <constraint firstItem="oYA-yY-WGJ" firstAttribute="trailing" secondItem="lXS-n4-2AO" secondAttribute="trailing" id="dtZ-t0-bhS"/>
+                            <constraint firstItem="oYA-yY-WGJ" firstAttribute="trailing" secondItem="cRn-XX-qlR" secondAttribute="trailing" id="fwi-xR-65G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oYA-yY-WGJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y60-uE-Wv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658.39999999999998" y="24.7376311844078"/>
+        </scene>
         <!--Main Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -152,6 +210,8 @@
         <image name="LivePhotoON" width="150" height="150"/>
         <image name="PortraitMatteON" width="150" height="150"/>
         <image name="camera_icon" width="29" height="24"/>
+        <image name="frogames" width="2304" height="1728"/>
+        <image name="frogames_black" width="431" height="377"/>
         <image name="video" width="23" height="15"/>
     </resources>
 </document>
