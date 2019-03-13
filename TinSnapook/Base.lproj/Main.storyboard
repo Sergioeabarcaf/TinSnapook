@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aQL-CF-fYP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,23 +42,50 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ingresar email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Fv-tM-YVR" customClass="RoundTextField" customModule="TinSnapook" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="155" width="275" height="21"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.62165560787671237" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="0.7517925941780822" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="5Fv-tM-YVR" firstAttribute="centerX" secondItem="lXS-n4-2AO" secondAttribute="centerX" id="0kP-nD-zhp"/>
+                                    <constraint firstItem="5Fv-tM-YVR" firstAttribute="leading" secondItem="lXS-n4-2AO" secondAttribute="leading" constant="50" id="2vI-3h-EYK"/>
                                     <constraint firstItem="wsM-iC-JTk" firstAttribute="top" secondItem="lXS-n4-2AO" secondAttribute="top" constant="60" id="9U5-6q-yad"/>
+                                    <constraint firstItem="5Fv-tM-YVR" firstAttribute="top" secondItem="wsM-iC-JTk" secondAttribute="bottom" constant="40" id="A6x-Zu-0jn"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Fv-tM-YVR" secondAttribute="trailing" constant="50" id="ENj-m4-4WJ"/>
                                     <constraint firstItem="wsM-iC-JTk" firstAttribute="centerX" secondItem="lXS-n4-2AO" secondAttribute="centerX" id="P6h-Fl-nhP"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lXS-n4-2AO" firstAttribute="leading" secondItem="oYA-yY-WGJ" secondAttribute="leading" id="44z-cp-SOG"/>
+                            <constraint firstItem="lXS-n4-2AO" firstAttribute="leading" secondItem="tZw-9Z-jPa" secondAttribute="leading" id="44z-cp-SOG"/>
                             <constraint firstItem="cRn-XX-qlR" firstAttribute="leading" secondItem="oYA-yY-WGJ" secondAttribute="leading" id="4B8-HW-fHg"/>
                             <constraint firstItem="cRn-XX-qlR" firstAttribute="top" secondItem="oYA-yY-WGJ" secondAttribute="top" id="Aov-b3-cRl"/>
-                            <constraint firstItem="oYA-yY-WGJ" firstAttribute="bottom" secondItem="lXS-n4-2AO" secondAttribute="bottom" id="J1Z-VG-atO"/>
+                            <constraint firstAttribute="bottom" secondItem="lXS-n4-2AO" secondAttribute="bottom" id="J1Z-VG-atO"/>
                             <constraint firstItem="oYA-yY-WGJ" firstAttribute="bottom" secondItem="cRn-XX-qlR" secondAttribute="bottom" id="Jdu-5Z-WmU"/>
-                            <constraint firstItem="lXS-n4-2AO" firstAttribute="top" secondItem="oYA-yY-WGJ" secondAttribute="top" id="V2W-X9-ogL"/>
-                            <constraint firstItem="oYA-yY-WGJ" firstAttribute="trailing" secondItem="lXS-n4-2AO" secondAttribute="trailing" id="dtZ-t0-bhS"/>
+                            <constraint firstItem="lXS-n4-2AO" firstAttribute="top" secondItem="tZw-9Z-jPa" secondAttribute="top" constant="20" id="V2W-X9-ogL"/>
+                            <constraint firstAttribute="trailing" secondItem="lXS-n4-2AO" secondAttribute="trailing" id="dtZ-t0-bhS"/>
                             <constraint firstItem="oYA-yY-WGJ" firstAttribute="trailing" secondItem="cRn-XX-qlR" secondAttribute="trailing" id="fwi-xR-65G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oYA-yY-WGJ"/>
