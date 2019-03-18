@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0608279B223FB3E900755A5B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0608279A223FB3E900755A5B /* RoundButton.swift */; };
 		0608657C2235A87000F30827 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0608657B2235A87000F30827 /* LoginViewController.swift */; };
 		0608657E2235B0F600F30827 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0608657D2235B0F500F30827 /* GoogleService-Info.plist */; };
 		069318DB221CADF3008C633F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069318DA221CADF3008C633F /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0608279A223FB3E900755A5B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		0608657B2235A87000F30827 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0608657D2235B0F500F30827 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		069318D7221CADF3008C633F /* TinSnapook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinSnapook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 				069318EC221CAFFC008C633F /* PhotoCaptureDelegate.swift */,
 				069318EE221CAFFD008C633F /* PreviewView.swift */,
 				069318DE221CADF3008C633F /* Main.storyboard */,
+				0608279A223FB3E900755A5B /* RoundButton.swift */,
 				06A4D91F223914B8005EF229 /* RoundTextField.swift */,
 				0608657B2235A87000F30827 /* LoginViewController.swift */,
 				069318E1221CADF5008C633F /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0608279B223FB3E900755A5B /* RoundButton.swift in Sources */,
 				0608657C2235A87000F30827 /* LoginViewController.swift in Sources */,
 				069318F1221CAFFD008C633F /* PreviewView.swift in Sources */,
 				069318EF221CAFFD008C633F /* PhotoCaptureDelegate.swift in Sources */,
