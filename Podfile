@@ -6,6 +6,10 @@ target 'TinSnapook' do
   use_frameworks!
 
   # Pods for TinSnapook
+  pod 'Firebase'
   pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
 end
