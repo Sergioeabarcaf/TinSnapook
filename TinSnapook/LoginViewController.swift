@@ -9,11 +9,24 @@
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
-
+    @IBOutlet weak var emailTextField: RoundTextField!
+    @IBOutlet weak var passwordTextField: RoundTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func loginButton(_ sender: RoundButton) {
+        if let email = self.emailTextField.text,
+            let pass = self.passwordTextField.text, (email.count > 0 && pass.count > 0){
+            AuthService.shared.login(email: email, password: pass)
+        } else {
+            let alert = UIAlertController(title: "Usuario o Contraseña incorrecto", message: "Por favor rellena tu usuario y contraseña para continuar", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alert, animated: true)
+        }
     }
     
     //MARK: textfield

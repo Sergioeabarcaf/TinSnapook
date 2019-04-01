@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -123,6 +123,10 @@
                                                 <color key="value" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButton:" destination="aQL-CF-fYP" eventType="touchUpInside" id="cL7-eO-u7j"/>
+                                            <action selector="loginEnter:" destination="aQL-CF-fYP" eventType="touchUpInside" id="aLh-2n-B1C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="0.7517925941780822" colorSpace="custom" customColorSpace="sRGB"/>
@@ -156,6 +160,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oYA-yY-WGJ"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="5Fv-tM-YVR" id="LlL-EI-6cp"/>
+                        <outlet property="passwordTextField" destination="Sfs-is-wsm" id="VrS-aG-ieU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y60-uE-Wv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +182,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="33L-NJ-3UD">
-                                <rect key="frame" x="144" y="489" width="87" height="29"/>
+                                <rect key="frame" x="157" y="489" width="61" height="29"/>
                                 <segments>
                                     <segment title="" image="camera_icon"/>
                                     <segment title="" image="video"/>
