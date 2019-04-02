@@ -21,7 +21,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginButton(_ sender: RoundButton) {
         if let email = self.emailTextField.text,
             let pass = self.passwordTextField.text, (email.count > 0 && pass.count > 0){
-            AuthService.shared.login(email: email, password: pass)
+            AuthService.shared.login(email: email, password: pass, onComplete: {(message, data) in
+                guard message == nil else{
+                    let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                    return
+                }
+                self.dismiss(animated: true, completion: nil)
+                
+            })
         } else {
             let alert = UIAlertController(title: "Usuario o Contraseña incorrecto", message: "Por favor rellena tu usuario y contraseña para continuar", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
