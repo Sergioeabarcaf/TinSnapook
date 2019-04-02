@@ -24,18 +24,29 @@ class AuthService{
                 if let errorCode = AuthErrorCode(rawValue: error.code){
                     if errorCode == AuthErrorCode.userNotFound {
                         //Crear usuario
-                        Auth.createUser(withEmail: email, password: password, completion: { (user, error) in
+                        Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                             if error != nil {
                                 //Mostrar error
                             } else {
-                                if user.uid != nil {
+                                if user?.user.uid != nil {
                                     // hacer login usuario
+                                    Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                                        if error != nil {
+                                            //mostrar error
+                                        } else {
+                                            //se completo
+                                        }
+                                    })
                                 }
                             }
                         })
                         
+                    } else {
+                        // revisar codigos de error
                     }
                 }
+            } else {
+                // login correcto
             }
         }
     }
