@@ -32,6 +32,8 @@ class AuthService{
                                 self.handleFirebaseError(error: error, onComplete: onComplete)
                             } else {
                                 if user?.user.uid != nil {
+                                    //Almacenar en Firebase el uid del usuario
+                                    dbService.shared.saveUser(uid: user!.user.uid)
                                     // hacer login usuario
                                     Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                                         if let error = (error as NSError?) {

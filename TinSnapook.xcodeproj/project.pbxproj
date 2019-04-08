@@ -20,6 +20,7 @@
 		069318F1221CAFFD008C633F /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069318EE221CAFFD008C633F /* PreviewView.swift */; };
 		06A4D920223914B8005EF229 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4D91F223914B8005EF229 /* RoundTextField.swift */; };
 		06C266A722521A2700F5345A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C266A622521A2700F5345A /* AuthService.swift */; };
+		06D32DB4225A3F330004407D /* dbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D32DB3225A3F330004407D /* dbService.swift */; };
 		9DE0388E3DB1E79CBAE5BC28 /* Pods_TinSnapook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D734949B51373B4D8F908DC4 /* Pods_TinSnapook.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		069318EE221CAFFD008C633F /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		06A4D91F223914B8005EF229 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		06C266A622521A2700F5345A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		06D32DB3225A3F330004407D /* dbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbService.swift; sourceTree = "<group>"; };
 		147AFCCA4A88A2535A891735 /* Pods-TinSnapook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinSnapook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinSnapook/Pods-TinSnapook.debug.xcconfig"; sourceTree = "<group>"; };
 		673DCD0BE77123E4F5DA0AD2 /* Pods-TinSnapook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinSnapook.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinSnapook/Pods-TinSnapook.release.xcconfig"; sourceTree = "<group>"; };
 		D734949B51373B4D8F908DC4 /* Pods_TinSnapook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinSnapook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 				0608279A223FB3E900755A5B /* RoundButton.swift */,
 				06A4D91F223914B8005EF229 /* RoundTextField.swift */,
 				0608657B2235A87000F30827 /* LoginViewController.swift */,
+				06D32DB3225A3F330004407D /* dbService.swift */,
 				069318E1221CADF5008C633F /* Assets.xcassets */,
 				069318E3221CADF5008C633F /* LaunchScreen.storyboard */,
 				069318E6221CADF5008C633F /* Info.plist */,
@@ -240,6 +243,7 @@
 				069318F0221CAFFD008C633F /* CameraViewController.swift in Sources */,
 				069318DD221CADF3008C633F /* MainCameraViewController.swift in Sources */,
 				069318DB221CADF3008C633F /* AppDelegate.swift in Sources */,
+				06D32DB4225A3F330004407D /* dbService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
