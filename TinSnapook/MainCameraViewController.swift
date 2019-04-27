@@ -63,7 +63,7 @@ class MainCameraViewController: CameraViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        guard Auth.auth().currentUser != nil else {
+        guard Auth.auth().currentUser == nil else {
             performSegue(withIdentifier: "showLoginVC", sender: nil)
             return
         }
